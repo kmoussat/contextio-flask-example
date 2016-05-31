@@ -2,8 +2,8 @@
 
 Excited about using the Context.io apis for your next app?  Thrilled about the explicit and readable nature of Python code? Overflowing with enthusiasm about Flask?  Look no further!  
 
-Here at Context.IO we love experimenting.  As one of our "Hack" days we decided it would be cool to put together a simple application using our [Context.IO Python library](https://github.com/contextio/Python-ContextIO
-) and Flask to demonstrate how easily you can get started!
+Here at Context.IO we love experimenting.  With all the hype around [Flask](http://flask.pocoo.org/) lately we thought it would be fun to put together a simple application using our [Context.IO Python library](https://github.com/contextio/Python-ContextIO
+) to demonstrate how easily you can get started!
 
 In order to get up and running with this application follow these steps.
 
