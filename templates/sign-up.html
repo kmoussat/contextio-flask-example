@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+  <form class="form-signin" action="/sign-up" method="POST">
+    <h2 class="form-signin-heading">Sign up!</h2>
+    <input type="text" name="first_name" id="first-name" class="form-control inline-form-element" placeholder="First Name" required autofocus>
+    <input type="text" name="last_name" id="last-name" class="form-control inline-form-element" placeholder="Last Name" required>
+    <input type="email" name="email" id="email-address" class="form-control" placeholder="Email Address" required>
+    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  </form>
+</div>
+{% endblock %}

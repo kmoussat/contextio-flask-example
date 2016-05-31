@@ -1,0 +1,19 @@
+body            {
+  font-family: sans-serif;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.inline-form-element {
+  display: inline-block;
+  width: 148px;
+  margin-right: 0px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}

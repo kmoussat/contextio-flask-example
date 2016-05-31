@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+  <h2>Welcome {{user.first_name}} {{user.last_name}}</h2>
+  {% if messages %}
+  <p class="lead">Here are your last 5 messages for {{user.id}}</p>
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    {% for message in messages %}
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="{{loop.index}}">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{loop.index}}" aria-expanded="true" aria-controls="collapse{{loop.index}}">
+              {{loop.index}}. {{message["subject"]}}
+            </a>
+          </h4>
+        </div>
+        <div id="collapse{{loop.index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{loop.index}}">
+          <div class="panel-body">
+            {{message["addresses"]["from"]["name"]}}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% else %}
+    <h3>Looks like there aren't any messages which means:</h3>
+    <ul>
+      <li>The email account you connected has not finished syncing - wait 10 seconds and try refreshing</li>
+      <li>There are no emails in this email account's inbox</li>
+    </ul>
+  {% endif %}
+</div>
+{% endblock %}
