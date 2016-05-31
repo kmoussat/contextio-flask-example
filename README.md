@@ -17,7 +17,7 @@ We have included a `Dockerfile` to make things nice an easy for you
 
 *NOTE:* docker-machine users - Make sure your `docker-machine` is ready to go
     
-    eval $(docker-machine env <name-of-machine>
+    eval $(docker-machine env <name-of-machine>)
 
 To build and run the container
 
